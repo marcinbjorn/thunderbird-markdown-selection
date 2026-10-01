@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Render Selected Markdown",
+  "version": "1.1.0",
+  "description": "Render selected Markdown as HTML in Thunderbird compose windows.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "render-selected-markdown@local",
+      "strict_min_version": "128.0"
+    }
+  },
+  "icons": {
+    "48": "icon.svg"
+  },
+  "permissions": [
+    "compose",
+    "menus",
+    "notifications"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "compose_action": {
+    "default_title": "Render Markdown",
+    "default_icon": "icon.svg"
+  }
+}
